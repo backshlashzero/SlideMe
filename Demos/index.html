@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slide Me</title>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/jquery.SlideMe.min.js"></script>
+    <link href="styles/SlideMe.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            
+            $("#prev").click(function () {
+                $("#slides").SlideMe({
+                    direction: 'right',
+                    changeSpeed: 500,
+                    slidewidth: 259,
+                    slidestomove:2
+                });
+            });
+            
+            $("#next").click(function () {
+                $("#slides").SlideMe({
+                    direction: 'left',
+                    changeSpeed: 500,                    
+                    slidewidth: 259,
+                    slidestomove:2
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class='demo'>
+        <div class="heading">
+            <h1>SlideMe Demo</h1>
+        </div>
+        <div class="SlideMe">
+            <ul id='slides'>
+                <li>
+                    <img src='images/image1.jpg' title='image 1'/>
+                </li>
+                <li>
+                    <img src='images/image2.jpg' title='image 2'/>
+                </li>
+                <li>
+                    <img src='images/image3.jpg' title='image 3'/>
+                </li>
+                <li>
+                    <img src='images/image4.jpg' title='image 4'/>
+                </li>
+                <li>
+                    <img src='images/image5.jpg' title='image 5'/>
+                </li>
+                <li>
+                    <img src='images/image6.jpg' title='image 6'/>
+                </li>
+                <li>
+                    <img src='images/image7.jpg' title='image 7'/>
+                </li>
+                <li>
+                    <img src='images/image8.jpg' title='image 8'/>
+                </li>
+            </ul>
+        </div>
+        <br />
+        <div class="buttons">
+            <a id="prev" href="#">Previous</a> | <a id="next"  href="#">Next</a>
+        </div>
+        <br />
+    </div>
+</body>
+</html>
