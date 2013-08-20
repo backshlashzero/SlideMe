@@ -1,4 +1,4 @@
 SlideMe
 =======
 
-jQuery plugin for sliding image in a container
+Description: http://backslashzero.net/?p=14
